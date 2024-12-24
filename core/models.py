@@ -1,3 +1,4 @@
 from django.db import models
 
-# Create your models here.
+class TestInsert(models.Model):
+    data = models.CharField(max_length = 10)

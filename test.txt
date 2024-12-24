@@ -1,0 +1,4 @@
+docker run --name testpostgres -e POSTGRES_PASSWORD=kontolodon -e POSTGRES_DB=saliskasep -e POSTGRES_USER=salism3 -p 5432:5432 postgres
+
+
+wrk -d3s -t4 -c64 http://127.0.0.1:8000/api/hello
